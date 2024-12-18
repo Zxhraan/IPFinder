@@ -9,13 +9,13 @@ Pattern Mypattern = Pattern.compile(“^((https?|ftp)://|(www|ftp)\\.)[a-z0-9-]+
  Scanner input = new Scanner(System.in);
  System.out.println(“Enter the Url to be checked: “);
  String name = input.nextLine();
- Matcher Mymatcher = Mypattern.matcher(name);
- Boolean Myboolean = Mymatcher.matches();
- if(Myboolean == true) {
- System.out.println(“Url is correct”);
+Matcher Mymatcher = Mypattern.matcher(name);
+Boolean Myboolean = Mymatcher.matches();
+if(Myboolean == true) {
+ System.out.println(“Url is correct, you can go ahead with this”);
  } else {
- System.out.println(“Url is incorrect”);
- }
- }
+System.out.println(“Url is incorrect, Please check your Url.”);
 }
+ }
+} 
 /* Here code ends*/
